@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:background="@drawable/widget_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/ivBattery"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_weight="1.35"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/battery_icon_desc"
+        android:scaleType="centerInside" />
+
+    <FrameLayout
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="12dp">
+
+        <ImageView
+            android:id="@+id/ivRing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/battery_ring_desc"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tvPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:includeFontPadding="false"
+            android:text="80%"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">桌面电量</string>
+    <string name="battery_icon_desc">电池图标</string>
+    <string name="battery_ring_desc">电量圆环</string>
+</resources>
